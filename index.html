@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>차현준 Portfolio</title>
+  <link rel="preload" as="audio" href="assets/typing-deal-light.mp3" type="audio/mpeg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -30,7 +31,7 @@
         <p class="tag">AI · Backend Developer</p>
         <h1>차현준</h1>
         <p class="intro">
-          데이터 수집, 백엔드 개발, 서버 운영을 기반으로 실제 동작하는 웹 서비스를 만드는 개발자입니다.
+          데이터를 수집하고 검증해, 신뢰할 수 있는 웹 서비스로 구현하는 백엔드 개발자입니다.
         </p>
         <div class="links">
           <a href="https://github.com/deallight" target="_blank">GitHub</a>
@@ -42,14 +43,16 @@
         <div class="card">
           <h3>프로젝트 리더 경험</h3>
           <p>
-            팀 프로젝트에서 리더 역할을 수행하며 요구사항 분석, 일정 관리, 구현, 테스트, 발표까지
-            프로젝트 전 과정을 주도한 경험이 있습니다.
+            요구사항을 기능 단위로 정리하고 개발 우선순위를 조정하며 프로젝트 전반의 흐름을 관리했습니다.
+            구현과 테스트 과정에서 역할을 조율하고, 발표까지 결과물의 완성도를 높이는 데 집중했습니다.
+            진행 상황과 이슈를 공유하며, 필요한 작업을 정리해 개발 방향이 흐트러지지 않도록 했습니다.
           </p>
         </div>
         <div class="card">
           <h3>웹 서비스 개발</h3>
           <p>
-            Python, FastAPI, PostgreSQL을 활용한 백엔드 개발과 Ubuntu 서버 기반 배포 및 운영 경험을 보유하고 있습니다.
+            Python, FastAPI, PostgreSQL을 활용해 데이터 처리부터 API 개발까지 이어지는 백엔드 흐름을 구현했습니다.
+            공공기관 업무추진비 데이터를 수집·정제하고 외부 API로 검증하여, 사용자가 신뢰할 수 있는 정보로 제공하는 웹 서비스를 개발했습니다.
           </p>
         </div>
       </div>
@@ -61,9 +64,9 @@
           <article class="info-panel">
             <h2>Education</h2>
             <div class="timeline">
-              <p><strong>2018</strong> 경운대학교 항공전자공학과 입학</p>
+              <p><strong>2026</strong> 세종대학교 전자정보통신공학과 재학</p>
               <p><strong>2022</strong> 경운대학교 항공전자공학과 졸업</p>
-              <p><strong>2026</strong> 세종대학교 전자정보통신공학과 편입</p>
+              <p><strong>2018</strong> 경운대학교 항공전자공학과 입학</p>
             </div>
           </article>
 
@@ -127,28 +130,33 @@
 
       <article class="project project-featured">
         <div class="project-content">
-          <h3>Project 01. 공공기관 맛집 지도 서비스</h3>
-          <p class="subtitle">공공기관 업무추진비 데이터를 활용한 신뢰도 높은 맛집 정보 서비스</p>
-          <p>
-            공공기관 업무추진비 데이터를 자동으로 수집·분석하여 실제 이용한 음식점을 지도에서 제공하는 서비스입니다.
-            다양한 형식의 공개 데이터를 하나의 파이프라인으로 통합하고, 지도 API를 활용하여 음식점 정보를 검증합니다.
-          </p>
-          <div class="project-tags" aria-label="Project 01 기술 스택">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>PostgreSQL</span>
-            <span>SQLAlchemy</span>
-            <span>Pandas</span>
-            <span>BeautifulSoup</span>
-            <span>Naver API</span>
+          <div class="project-intro">
+            <h3>Project 01. 공공기관 맛집 지도 서비스</h3>
+            <p class="subtitle">공공기관 업무추진비 데이터를 활용한 신뢰도 높은 맛집 정보 서비스</p>
+            <p>
+              공공기관 업무추진비 데이터를 자동으로 수집·분석하여 실제 이용한 음식점을 지도에서 제공하는 서비스입니다.
+              다양한 형식의 공개 데이터를 하나의 파이프라인으로 통합하고, 지도 API를 활용하여 음식점 정보를 검증합니다.
+            </p>
           </div>
-          <ul>
-            <li>단독 프로젝트</li>
-            <li>FastAPI 기반 REST API 개발</li>
-            <li>PostgreSQL 데이터베이스 설계</li>
-            <li>HTML, CSV, XLSX 데이터 수집 및 파싱</li>
-            <li>음식점 중복 제거 및 주소 기반 정제 로직 구현</li>
-          </ul>
+          <div class="project-details">
+            <div class="project-tags" aria-label="Project 01 기술 스택">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>PostgreSQL</span>
+              <span>SQLAlchemy</span>
+              <span>Pandas</span>
+              <span>BeautifulSoup</span>
+              <span>Naver API</span>
+            </div>
+            <ul>
+              <li>단독 프로젝트</li>
+              <li>FastAPI 기반 REST API 개발</li>
+              <li>PostgreSQL 데이터베이스 설계</li>
+              <li>HTML, CSV, XLSX 데이터 수집 및 파싱</li>
+              <li>음식점 중복 제거 및 주소 기반 정제 로직 구현</li>
+              <li>Naver API를 활용한 음식점 정보 검증 및 지도 표시 데이터 구성</li>
+            </ul>
+          </div>
         </div>
         <figure class="project-media">
           <button
@@ -232,6 +240,22 @@
   <script>
     const typingLines = Array.from(document.querySelectorAll(".typing-line"));
 
+    const createTypingSound = () => {
+      const audio = document.createElement("audio");
+      audio.src = "assets/typing-deal-light.mp3";
+      audio.preload = "auto";
+      audio.volume = 0.72;
+
+      const play = () => {
+        audio.currentTime = 0;
+        audio.play().catch(() => {});
+      };
+
+      return { play };
+    };
+
+    const typingSound = createTypingSound();
+
     const initTypingAnimation = () => {
       if (typingLines.length === 0) {
         return;
@@ -280,7 +304,10 @@
         window.setTimeout(typeNext, nextCharacter === " " ? 180 : 105);
       };
 
-      window.setTimeout(typeNext, 420);
+      window.setTimeout(() => {
+        typingSound.play();
+        typeNext();
+      }, 420);
     };
 
     initTypingAnimation();
@@ -350,7 +377,7 @@
     });
 
     const revealTargets = document.querySelectorAll(
-      ".profile-summary .info-panel, section:not(.about-section) > h2, section:not(.about-section) .project, section:not(.about-section) .card"
+      ".profile-summary .info-panel, section > h2, section .project, section .card"
     );
 
     revealTargets.forEach((target) => {
